@@ -1,0 +1,180 @@
+:root {
+  --blue: #3636ff;
+  --mint: #2bfca4;
+}
+
+body {
+  background-color: #121212;
+}
+
+* {
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  border: none;
+}
+
+#wrap-nav {
+  position: absolute;
+  height: 2500px;
+  width: 100%;
+}
+
+#top-padding {
+  display: block;
+  height: 32px;
+  background-color: #12121222;
+  backdrop-filter: blur(20px);
+}
+
+nav {
+  position: sticky;
+  z-index: 100;
+  top: 0px;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  background-color: #12121222;
+  backdrop-filter: blur(20px);
+  align-items: center;
+  justify-content: center;
+}
+
+nav > img {
+  display: flexbox;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 60px;
+  height: 60px;
+  border-radius: 999px;
+  background-color: var(--blue);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+#bg {
+  background: linear-gradient(0deg, #00000000, #000000ff),
+    center/cover url("./img/bg.jpg");
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* background: cover url("./bg.jpg"); */
+}
+
+#bg > * {
+  display: flexbox;
+  text-align: center;
+}
+
+strong {
+  color: var(--mint);
+}
+
+h1 {
+  font-size: 32px;
+  margin-top: 196px;
+}
+
+h1,
+h2,
+h3,
+h4,
+strong {
+  font-weight: 700;
+}
+
+button {
+  width: 300px;
+  height: 48px;
+  border-radius: 999px;
+  background-color: var(--blue);
+  font-size: 16px;
+  transition: 0.2s ease-in;
+}
+
+h3 {
+  margin-top: 32px;
+}
+
+#title_btn {
+  margin-top: 240px;
+}
+
+.wrapper {
+  margin: 16px;
+  margin-top: 128px;
+}
+
+.content {
+  margin: 4px;
+  margin-top: 32px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  margin-top: 4px;
+  font-weight: 400;
+}
+
+.lang {
+  margin-top: 24px;
+}
+
+.sub-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.lang-name {
+  display: flex;
+  align-items: center;
+  margin-left: 4px;
+}
+
+.lang-name > span {
+  margin-left: 8px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.content > a {
+  color: var(--mint);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.content > ol {
+  margin-left: 16px;
+}
+
+.final {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.final > * {
+  text-align: center;
+}
+
+button:hover {
+  background: #3636ff55;
+  backdrop-filter: blur(10px);
+  border: solid 0.1px #3636ff;
+}
